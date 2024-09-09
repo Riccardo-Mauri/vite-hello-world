@@ -1,32 +1,24 @@
 <script>
 //1- Importazione del componenente necessario che voglio aggiungere qua
-import AppHeader from './components/AppHeader.vue';
+import AppTitle from './components/AppTitle.vue';
 
 export default {
   data() {
-    return {
-      count: 0
+    return { 
     }
   },
   //2- Dichiarazione del componente 
   components: {
-    AppHeader
+    AppTitle
   },
-  methods: {
-    incrementCount(){
-      this.count++;
-    }
-  }
+  
 }
 </script>
 
 <template>
   <div>
     <!--3- Utilizzo del componenete -->
-    <AppHeader />
-   <button @click="incrementCount()">
-    {{ count }}
-   </button>
+    <AppTitle />
   </div>
 </template>
 
